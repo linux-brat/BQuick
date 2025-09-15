@@ -1,0 +1,100 @@
+7-Zip - File archiver and compressor
+WinRAR - Archive manager for RAR and ZIP files
+PeaZip - Free archiver with strong encryption
+Sysinternals Suite - Advanced system utilities from Microsoft
+Everything - Instant file and folder search tool
+PowerToys - Windows system utilities and power user tools
+CPU-Z - System information and CPU details
+HWMonitor - Hardware monitoring and temperature tool
+Speccy - System information and hardware details
+CrystalDiskInfo - Hard drive health monitoring
+CrystalDiskMark - Disk benchmarking and performance testing
+HWiNFO - Hardware information and diagnostics
+Autoruns - Manage Windows startup programs
+Revo Uninstaller - Advanced software uninstaller
+Geek Uninstaller - Lightweight software uninstaller
+CCleaner - System cleaner and privacy tool
+Defraggler - Disk defragmentation utility
+TreeSize Free - Disk space analyzer and visualizer
+WinDirStat - Directory statistics and disk usage
+Microsoft PC Manager - Official Microsoft PC maintenance utility
+Rufus - Bootable USB drive creator
+Etcher - USB and SD card imaging utility
+HashCheck - File hash verification tool
+TeraCopy - Enhanced file copy utility
+FreeFileSync - File synchronization and backup tool
+SyncBackFree - File backup and synchronization
+UltraISO - CD/DVD image file editor and creator
+ImgBurn - Lightweight CD/DVD burning software
+WinCDEmu - Virtual CD/DVD drive emulator
+WizTree - Fast disk space analyzer
+PuTTY - SSH and telnet client
+OpenSSH - Secure Shell protocol implementation
+WinSCP - SFTP, FTP and SCP client
+FileZilla - Cross-platform FTP client
+Nmap - Network discovery and security scanner
+NetSpeedMonitor - Network speed monitoring tool
+Angry IP Scanner - Fast network IP scanner
+TCPView - TCP and UDP endpoint viewer
+NetLimiter - Internet traffic control and monitoring
+KeePass - Free password manager
+Bitwarden - Open source password manager
+VeraCrypt - Disk encryption software
+NordVPN - VPN service client
+OpenVPN Connect - Open source VPN client
+Malwarebytes - Anti-malware protection
+GlassWire - Network security monitoring and firewall
+Gpg4win - GNU Privacy Guard for Windows
+Notepad++ - Advanced text editor with syntax highlighting
+Process Monitor - Real-time file system and registry monitoring
+OBS Studio - Video recording and live streaming software
+Shotcut - Free, open-source video editor
+OpenShot - Easy-to-use video editor
+VSDC Free Video Editor - Non-linear video editing software
+DaVinci Resolve - Professional video editing and color correction
+CamStudio - Screen recording software
+ShareX - Screen capture, file sharing and productivity tool
+Bandicam - Lightweight screen recorder
+Lightworks - Professional video editing software
+ScreenToGif - Screen, webcam and sketchboard recorder with GIF export
+Audacity - Free, open-source audio editor
+Voicemeeter Banana - Advanced audio mixer application
+Reaper - Digital audio workstation (DAW)
+Ocenaudio - Fast and functional audio editor
+LMMS - Free cross-platform music production software
+FL Studio - Complete software music production environment
+GIMP - Free and open-source image editor
+Paint.NET - Free image and photo editing software
+Krita - Professional free and open-source painting program
+Inkscape - Vector graphics editor
+Affinity Photo - Professional photo editing software
+IrfanView - Fast and compact image viewer
+XnView - Image viewer and converter
+FastStone Image Viewer - Image browser, converter and editor
+VLC Media Player - Free and open-source multimedia player
+MPV Player - Free, open-source, and cross-platform media player
+PotPlayer - Multimedia player with advanced features
+KMPlayer - Multimedia player supporting various formats
+Media Player Classic (MPC-HC) - Lightweight media player
+K-Lite Codec Pack - Collection of audio and video codecs
+Plex - Media server and streaming platform
+Kodi - Open-source home theater software
+Foobar2000 - Advanced freeware audio player
+iTunes - Media player, media library, and mobile device management
+FFmpeg - Command-line tool to process audio and video
+HandBrake - Open-source video transcoder
+XMedia Recode - Audio and video converter
+Format Factory - Multifunctional media converter
+MakeMKV - Convert video formats to MKV
+DVDStyler - DVD authoring tool
+MKVToolNix - Tools for Matroska (MKV) media container
+Avidemux - Free video editor and converter
+Any Video Converter - Universal video converter
+Freemake Video Converter - Video converter and downloader
+Streamlabs - Live streaming software
+NDI Tools - IP video transmission tools
+Spotify - Digital music service
+Discord - Free voice, video, and text chat app
+Vesktop - Alternative desktop client for Discord
+
+More will be added soon.....!
