@@ -29,7 +29,7 @@
 
 ```powershell
 # Automated installation script
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/linux-brat/bquick/main/install.ps1" -OutFile "install.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/linux-brat/bquick/master/install.ps1" -OutFile "install.ps1"
 powershell -ExecutionPolicy Bypass -File "install.ps1"
 ```
 
