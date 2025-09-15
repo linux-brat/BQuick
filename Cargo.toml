@@ -14,7 +14,8 @@ keywords = [
     "powershell",
     "chocolatey",
 ] # Optional
-categories = ["command-line-utilities", "system-tools"] # Optional
+categories = ["command-line-utilities", "development-tools"]
+
 
 [dependencies]
 ratatui = "0.28"
