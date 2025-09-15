@@ -1,3 +1,4 @@
+
 # install.ps1 - Automated installer for BQuick
 
 $ErrorActionPreference = "Stop"
@@ -8,7 +9,6 @@ $GitHubUser = "linux-brat"
 $Branch = "main"
 $TempDir = "$env:TEMP\BQuick_Install"
 $ZipPath = "$TempDir\$RepoName.zip"
-$ExtractPath = "$TempDir\$RepoName"
 
 function Check-Rust {
     Write-Output "Checking for Rust installation..."
@@ -30,7 +30,14 @@ function Download-Source {
     New-Item -ItemType Directory -Force -Path $TempDir | Out-Null
 
     $url = "https://github.com/$GitHubUser/$RepoName/archive/refs/heads/$Branch.zip"
-    Invoke-WebRequest -Uri $url -OutFile $ZipPath
+
+    try {
+        Invoke-WebRequest -Uri $url -OutFile $ZipPath
+    } catch {
+        Write-Error "Failed to download source from $url`n$($_.Exception.Message)"
+        Exit 1
+    }
+
     Write-Output "Download complete."
 }
 
@@ -45,7 +52,14 @@ function Build-Install {
     Write-Output "Building and installing $RepoName..."
     $SourceDir = Join-Path $TempDir "$RepoName-$Branch"
     Push-Location $SourceDir
-    cargo install --path .
+
+    try {
+        cargo install --path .
+    } catch {
+        Write-Error "Cargo install failed: $($_.Exception.Message)"
+        Exit 1
+    }
+
     Pop-Location
     Write-Output "$RepoName installed successfully."
 }
