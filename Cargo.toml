@@ -4,6 +4,17 @@ version = "0.1.0"
 edition = "2021"
 authors = ["linux-brat"]
 description = "Quick software installer for Windows via PowerShell/Chocolatey"
+license = "MIT" # Add this line
+repository = "https://github.com/linux-brat/BQuick" # Recommended
+homepage = "https://github.com/linux-brat/BQuick" # Optional but recommended
+keywords = [
+    "software",
+    "installer",
+    "windows",
+    "powershell",
+    "chocolatey",
+] # Optional
+categories = ["command-line-utilities", "system-tools"] # Optional
 
 [dependencies]
 ratatui = "0.28"

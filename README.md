@@ -1,5 +1,4 @@
 <div align="center">
-<div align="center">
 
 # 🚀 BQuick
 
@@ -85,15 +84,14 @@ bquick
 
 ## 📸 Screenshots
 
-<p align="center">
-  <img src="screenshots/ss1.png" width="45%" alt="Main Menu"/>
-  <img src="screenshots/ss2.png" width="45%" alt="Installation Progress"/>
-</p>
+<div align="center" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
 
-<p align="center">
-  <img src="screenshots/ss3.png" width="45%" alt="Search"/>
-  <img src="screenshots/ss4.png" width="45%" alt="Uninstall"/>
-</p>
+<img src="screenshots/ss1.png" width="45%" alt="Main Menu" style="border:1px solid #ddd; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);"/>
+<img src="screenshots/ss2.png" width="45%" alt="Installation Progress" style="border:1px solid #ddd; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);"/>
+<img src="screenshots/ss3.png" width="45%" alt="Search" style="border:1px solid #ddd; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);"/>
+<img src="screenshots/ss4.png" width="45%" alt="Uninstall" style="border:1px solid #ddd; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);"/>
+
+</div>
 
 ---
 
