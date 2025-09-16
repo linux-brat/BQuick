@@ -1,179 +1,110 @@
-<div align="center">
+<h1 align="center">🚀 BQuick</h1>
 
-# BQuick
+<p align="center">
+  <a href="https://microsoft.com/windows">
+    <img src="https://img.shields.io/badge/Windows-10%2F11-0078d4?style=flat&logo=windows&logoColor=white" />
+  </a>
+  <a href="https://www.rust-lang.org/">
+    <img src="https://img.shields.io/badge/Rust-1.70%2B-orange?style=flat&logo=rust&logoColor=white" />
+  </a>
+  <a href="https://crates.io/crates/bquick">
+    <img src="https://img.shields.io/badge/Crates.io-v0.1.0-blue?logo=rust&logoColor=white" />
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-blue?logo=github" />
+  </a>
+</p>
 
-**Professional Software Installer for Windows**
-
-[![Windows](https://img.shields.io/badge/Windows-10%2F11-0078d4?style=for-the-badge&ds.io/badge/Rust-1.70+-orange?style=for-the-badge//img.shields.io![Crates.io](https://img.shields.io/crates/v/bquick?style=formanager for Windows. Install, update, and manage applications easily through WinGet and Chocolatey.
-
-</div>
-
----
-
-## What is BQuick?
-
-BQuick simplifies software management on Windows. Instead of visiting multiple websites to download software, BQuick provides one interface to install applications from trusted sources like Microsoft's WinGet and Chocolatey package managers.
-
-**Key Features:**
-
-- Install 200+ popular applications instantly
-- Uninstall and reinstall software safely
-- Smart detection of already installed programs
-- Real-time search across all software
-- Professional terminal interface with progress tracking
+<p align="center">
+  <b>Professional Windows Software Installer</b><br>
+  Simplifies app management with <b>WinGet</b> & <b>Chocolatey</b> in one clean interface.
+</p>
 
 ---
 
-## Installation
+## ✨ Features
 
-### Quick Install (Recommended)
+- ⚡ Dual package managers (WinGet & Chocolatey)
+- 🔍 Fuzzy search & filtering
+- 🖥️ Intuitive terminal UI
+- 📦 Batch operations for multiple installs
+- 🎯 Curated list of **150+ essential applications**
 
-Download and run our installer script:
+---
 
-```batch
-# Download installer
+## 📥 Installation
+
+### ⚡ Quick Install
+
+Run in an **elevated PowerShell**:
+
+```powershell
+# Download the installer
 curl -L -o install.bat https://raw.githubusercontent.com/linux-brat/bquick/master/install.bat
 
-# Run installer (Right-click → Run as Administrator)
-install.bat
+# Run the installer (Right-click → Run as Administrator recommended)
+Start-Process install.bat -Verb RunAs
 ```
 
-**What happens:** The installer checks for Rust, installs it if needed, then installs BQuick automatically.
-
-### Manual Install
-
-If you have Rust installed:
+### 🦀 Manual Install (via Rust)
 
 ```bash
 cargo install bquick
 ```
 
-If you don't have Rust:
-
-1. Install Rust from [rustup.rs](https://rustup.rs/)
-2. Restart your terminal
-3. Run `cargo install bquick`
-
 ---
 
-## Basic Usage
+## 🕹️ Usage
 
-**Start BQuick:**
+Launch the app:
 
 ```bash
 bquick
 ```
 
-**Navigation:**
-| Key | Action |
-|-----|--------|
-| `↑↓` | Navigate up/down |
-| `Space` | Select/deselect software |
-| `Enter` | Start installation |
-| `A` | Select all in category |
-| `U` | Switch to uninstall mode |
-| `F5` | Scan for installed software |
-| `/` | Search |
-| `Q` | Quit |
+### Controls:
 
-**Simple Workflow:**
-
-1. Launch BQuick
-2. Choose installation method (WinGet recommended)
-3. Browse software categories
-4. Select applications with `Space`
-5. Press `Enter` to install
+- ⬆⬇ / `j-k` → Navigate
+- ␣ Space → Select
+- ⏎ Enter → Install
+- ❌ Q → Quit
 
 ---
 
-## Available Software
+## 📂 Categories
 
-BQuick includes popular applications across these categories:
+| 🌐 Browsers | 💻 Development | 🎬 Media  | 🛠️ Utilities  |
+| ----------- | -------------- | --------- | ------------- |
+| Chrome      | VS Code        | VLC       | 7-Zip         |
+| Firefox     | IntelliJ       | OBS       | PowerToys     |
+| Edge        | Docker         | GIMP      | CCleaner      |
+| Brave       | Git            | Audacity  | Wireshark     |
+| Vivaldi     | Python         | HandBrake | CPU-Z         |
+| Tor Browser | Node.js        | Krita     | TreeSize Free |
 
-- **Web Browsers:** Chrome, Firefox, Edge, Brave
-- **Development:** VS Code, Git, Node.js, Docker, Python
-- **Media:** VLC, OBS Studio, GIMP, Audacity
-- **Utilities:** 7-Zip, PowerToys, Everything
-- **Communication:** Discord, Zoom, Teams
-
-Total: 200+ applications
-
----
-
-## Common Tasks
-
-**Install Multiple Programs:**
-
-1. Navigate to a category
-2. Use `Space` to select each program you want
-3. Press `Enter` to install all selected
-
-**Remove Software:**
-
-1. Press `U` to switch to uninstall mode
-2. Select programs to remove
-3. Press `Enter` to uninstall
-
-**Find Specific Software:**
-
-1. Press `/` to search
-2. Type the program name
-3. Select from results
+More check app list - [Click Me](App-List.txt)
 
 ---
 
-## Troubleshooting
+## 🤝 Contribution
 
-**Installation fails:**
-
-- Run terminal as Administrator
-- Check internet connection
-- Restart terminal if Rust was just installed
-
-**Software not detected:**
-
-- Press `F5` for deep scan
-- Some portable apps may not be detected
-
-**Need help:**
-
-- Press `F1` in the app for help
-- Visit [GitHub Issues](https://github.com/linux-brat/bquick/issues)
+Contributions are welcome!
+Fork this repo, edit `src/categories` to add software, and submit a PR 🚀
 
 ---
 
-## Contributing
+## 📜 License
 
-Want to help improve BQuick?
-
-**Add New Software:**
-
-1. Fork the repository
-2. Edit `src/categories.rs`
-3. Add your software entry
-4. Submit a pull request
-
-**Report Issues:**
-
-- Use [GitHub Issues](https://github.com/linux-brat/bquick/issues) for bugs
-- Include your Windows version and error details
-
-**Development:**
-
-```bash
-git clone https://github.com/linux-brat/bquick.git
-cd bquick
-cargo run
-```
+Licensed under **MIT** — see [LICENSE](./LICENSE) for details.
 
 ---
 
-## License
+## 📸 Screenshots
 
-MIT License - Use freely for personal and commercial projects.
+| Main UI                           | Installation Progress                           |
+| --------------------------------- | ----------------------------------------------- |
+| ![Main UI](./screenshots/ss2.png) | ![Installation Progress](./screenshots/ss1.png) |
 
----
-
-**Built with Rust - Designed for Windows - Open Source**
-
-[View on GitHub](https://github.com/linux-brat/bquick) - [Report Issues](https://github.com/linux-brat/bquick/issues) - [Documentation](https://github.com/linux-brat/bquick/wiki)
+| App List                           | Completed Installs                           |
+| ---------------------------------- | -------------------------------------------- |
+| ![App List](./screenshots/ss3.png) | ![Completed Installs](./screenshots/ss4.png) |

@@ -96,5 +96,59 @@ NDI Tools - IP video transmission tools
 Spotify - Digital music service
 Discord - Free voice, video, and text chat app
 Vesktop - Alternative desktop client for Discord
+Steam - Popular gaming platform and digital store
+Epic Games Launcher - Store and launcher for Epic titles and exclusives
+Ubisoft Connect - Ubisoft’s official game launcher and DRM
+EA App (Origin) - EA’s digital distribution platform
+Battle.net - Blizzard and Activision launcher
+GOG Galaxy - DRM-free games launcher and manager
+Itch.io App - Indie games launcher and downloader
+Xbox App (PC) - Xbox Game Pass and Microsoft games launcher
+Playnite - Unified game launcher and library manager
+Lutris (Windows build) - Open-source gaming library manager
+RetroArch - Emulator frontend for retro gaming
+Cemu - Wii U emulator
+yuzu - Nintendo Switch emulator
+Ryujinx - Nintendo Switch emulator alternative
+Dolphin Emulator - GameCube and Wii emulator
+PCSX2 - PlayStation 2 emulator
+RPCS3 - PlayStation 3 emulator
+PPSSPP - PSP emulator
+Project64 - Nintendo 64 emulator
+MAME - Arcade game emulator
+DOSBox - Classic DOS emulator
+ScummVM - Classic point-and-click adventure engine
+OpenEmu (Windows build unofficial) - Emulator frontend
+VisualBoyAdvance-M - Game Boy Advance emulator
+Nestopia - NES emulator
+Snes9x - Super Nintendo emulator
+MelonDS - Nintendo DS emulator
+Citra - Nintendo 3DS emulator
+BlueStacks - Android emulator for games
+LDPlayer - Android gaming emulator
+NoxPlayer - Android emulator for Windows
+MEmu Play - Android emulator optimized for gaming
+Gameloop (Tencent Gaming Buddy) - Android emulator for PUBG & COD
+PCSX-Redux - PlayStation 1 emulator
+OpenTTD - Open-source Transport Tycoon Deluxe
+Minetest - Open-source Minecraft-like game
+0 A.D. - Open-source strategy game
+SuperTuxKart - Open-source racing game
+Hedgewars - Worms-like artillery game
+Xonotic - Free and open-source FPS
+QuakeSpasm - Quake engine port
+ioquake3 - Quake III engine port
+Unreal Tournament (classic builds) - Arena shooter
+Urban Terror - Free multiplayer FPS
+Warsow - Fast-paced FPS
+Red Eclipse - Arena shooter
+Tremulous - Aliens vs Humans FPS/RTS
+OpenArena - Quake III-based open-source shooter
+Battle for Wesnoth - Open-source turn-based strategy game
+FreeCiv - Civilization-style open-source strategy
+Warzone 2100 - Open-source RTS
+Zero-K - Free RTS game
+Spring RTS - Real-time strategy engine
+MegaGlest - Free 3D RTS game
 
 More will be added soon.....!
