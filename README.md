@@ -1,118 +1,179 @@
 <div align="center">
 
-# 🚀 BQuick
+# BQuick
 
 **Professional Software Installer for Windows**
 
-![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=for-the-badge&logo=windows&logoColor=white)
-[![Rust](https://img.shields.io/badge/rust-1.70+-orange.svg?style=for-the-badge&logo=rust)](https://www.rust-lang.org/)
-![Perplexity](https://img.shields.io/badge/Perplexity-AI-purple?style=for-the-badge&logo=perplexity&logoColor=white)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
-
-**A terminal-based software installation manager that streamlines Windows software management through WinGet and Chocolatey.**
+[![Windows](https://img.shields.io/badge/Windows-10%2F11-0078d4?style=for-the-badge&ds.io/badge/Rust-1.70+-orange?style=for-the-badge//img.shields.io![Crates.io](https://img.shields.io/crates/v/bquick?style=formanager for Windows. Install, update, and manage applications easily through WinGet and Chocolatey.
 
 </div>
 
 ---
 
-## ✨ Features
+## What is BQuick?
 
-- 🔄 **Dual Package Manager Support** – WinGet/PowerShell + Chocolatey integration
-- 🔍 **Smart Software Detection** – Scan registry, filesystem, and package databases
-- 🎨 **Professional Terminal UI** – Modern interface with real-time progress tracking
-- ⚡ **Multiple Operations** – Install, uninstall, reinstall with automatic fallbacks
-- 📦 **Extensive Catalog** – 200+ apps across browsers, dev tools, media, and utilities
-- 🔎 **Advanced Search** – Real-time fuzzy search across categories
+BQuick simplifies software management on Windows. Instead of visiting multiple websites to download software, BQuick provides one interface to install applications from trusted sources like Microsoft's WinGet and Chocolatey package managers.
+
+**Key Features:**
+
+- Install 200+ popular applications instantly
+- Uninstall and reinstall software safely
+- Smart detection of already installed programs
+- Real-time search across all software
+- Professional terminal interface with progress tracking
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-### Prerequisites
+### Quick Install (Recommended)
 
-- **Rust & Cargo** → [Install Rust](https://rustup.rs/)
-- **Windows 10/11 (64-bit)**
+Download and run our installer script:
 
-### Quick Install (PowerShell)
+```batch
+# Download installer
+curl -L -o install.bat https://raw.githubusercontent.com/linux-brat/bquick/master/install.bat
 
-```powershell
-# Automated installation script
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/linux-brat/bquick/master/install.ps1" -OutFile "install.ps1"
-powershell -ExecutionPolicy Bypass -File "install.ps1"
+# Run installer (Right-click → Run as Administrator)
+install.bat
 ```
 
-### Direct Cargo Install
+**What happens:** The installer checks for Rust, installs it if needed, then installs BQuick automatically.
+
+### Manual Install
+
+If you have Rust installed:
 
 ```bash
 cargo install bquick
 ```
 
-or
+If you don't have Rust:
 
-```bash
-cargo install --git https://github.com/linux-brat/bquick.git
-```
+1. Install Rust from [rustup.rs](https://rustup.rs/)
+2. Restart your terminal
+3. Run `cargo install bquick`
 
 ---
 
-## 🎮 Usage
+## Basic Usage
+
+**Start BQuick:**
 
 ```bash
-# Launch BQuick
 bquick
 ```
 
-- Navigate with arrow keys or `j/k`
-- `Space` → Select software
-- `Enter` → Start installation
-- `Q` → Quit
+**Navigation:**
+| Key | Action |
+|-----|--------|
+| `↑↓` | Navigate up/down |
+| `Space` | Select/deselect software |
+| `Enter` | Start installation |
+| `A` | Select all in category |
+| `U` | Switch to uninstall mode |
+| `F5` | Scan for installed software |
+| `/` | Search |
+| `Q` | Quit |
 
-### 🔑 Key Controls
+**Simple Workflow:**
 
-| Key          | Action           |
-| ------------ | ---------------- |
-| `↑↓` / `j k` | Navigate         |
-| `Space`      | Toggle selection |
-| `Enter`      | Confirm / Start  |
-| `A`          | Select all       |
-| `U`          | Uninstall mode   |
-| `F5`         | Deep scan        |
-| `/`          | Search           |
-| `Q`          | Quit             |
-
----
-
-## 📸 Screenshots
-
-<div align="center" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
-
-<img src="screenshots/ss1.png" width="45%" alt="Main Menu" style="border:1px solid #ddd; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);"/>
-<img src="screenshots/ss2.png" width="45%" alt="Installation Progress" style="border:1px solid #ddd; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);"/>
-<img src="screenshots/ss3.png" width="45%" alt="Search" style="border:1px solid #ddd; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);"/>
-<img src="screenshots/ss4.png" width="45%" alt="Uninstall" style="border:1px solid #ddd; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);"/>
-
-</div>
+1. Launch BQuick
+2. Choose installation method (WinGet recommended)
+3. Browse software categories
+4. Select applications with `Space`
+5. Press `Enter` to install
 
 ---
 
-## 🤝 Contributing
+## Available Software
+
+BQuick includes popular applications across these categories:
+
+- **Web Browsers:** Chrome, Firefox, Edge, Brave
+- **Development:** VS Code, Git, Node.js, Docker, Python
+- **Media:** VLC, OBS Studio, GIMP, Audacity
+- **Utilities:** 7-Zip, PowerToys, Everything
+- **Communication:** Discord, Zoom, Teams
+
+Total: 200+ applications
+
+---
+
+## Common Tasks
+
+**Install Multiple Programs:**
+
+1. Navigate to a category
+2. Use `Space` to select each program you want
+3. Press `Enter` to install all selected
+
+**Remove Software:**
+
+1. Press `U` to switch to uninstall mode
+2. Select programs to remove
+3. Press `Enter` to uninstall
+
+**Find Specific Software:**
+
+1. Press `/` to search
+2. Type the program name
+3. Select from results
+
+---
+
+## Troubleshooting
+
+**Installation fails:**
+
+- Run terminal as Administrator
+- Check internet connection
+- Restart terminal if Rust was just installed
+
+**Software not detected:**
+
+- Press `F5` for deep scan
+- Some portable apps may not be detected
+
+**Need help:**
+
+- Press `F1` in the app for help
+- Visit [GitHub Issues](https://github.com/linux-brat/bquick/issues)
+
+---
+
+## Contributing
+
+Want to help improve BQuick?
+
+**Add New Software:**
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/name`)
-3. Commit changes (`git commit -m 'Add feature'`)
-4. Push to branch (`git push origin feature/name`)
-5. Open a Pull Request
+2. Edit `src/categories.rs`
+3. Add your software entry
+4. Submit a pull request
+
+**Report Issues:**
+
+- Use [GitHub Issues](https://github.com/linux-brat/bquick/issues) for bugs
+- Include your Windows version and error details
+
+**Development:**
+
+```bash
+git clone https://github.com/linux-brat/bquick.git
+cd bquick
+cargo run
+```
 
 ---
 
-## 📜 License
+## License
 
-MIT License – see [LICENSE](LICENSE) for details.
+MIT License - Use freely for personal and commercial projects.
 
 ---
 
-<div align="center">
+**Built with Rust - Designed for Windows - Open Source**
 
-**🦀 Built with Rust** • **🪟 Designed for Windows** • **💡 Powered by Community**
-
-</div>
+[View on GitHub](https://github.com/linux-brat/bquick) - [Report Issues](https://github.com/linux-brat/bquick/issues) - [Documentation](https://github.com/linux-brat/bquick/wiki)
