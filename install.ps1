@@ -3,7 +3,6 @@
 $ErrorActionPreference = "Stop"
 
 # Configuration
-$AppName = "BQuick"
 $CrateName = "bquick"
 
 # Colors for UI
@@ -14,10 +13,10 @@ $Cyan = "Cyan"
 
 function Write-Header {
     Clear-Host
-    Write-Host "╔══════════════════════════════════════════════╗" -ForegroundColor Cyan
-    Write-Host "║              BQuick Installer                ║" -ForegroundColor Cyan  
-    Write-Host "║          Professional Software Manager       ║" -ForegroundColor Cyan
-    Write-Host "╚══════════════════════════════════════════════╝" -ForegroundColor Cyan
+    Write-Host "================================================" -ForegroundColor Cyan
+    Write-Host "              BQuick Installer                 " -ForegroundColor Cyan  
+    Write-Host "          Professional Software Manager        " -ForegroundColor Cyan
+    Write-Host "================================================" -ForegroundColor Cyan
     Write-Host ""
 }
 
@@ -30,10 +29,10 @@ function Write-Step($StepNumber, $Message, $Status = "RUNNING") {
     }
     
     $StatusSymbol = switch($Status) {
-        "RUNNING" { "⚡" }
-        "SUCCESS" { "✅" }
-        "ERROR" { "❌" }
-        default { "⚡" }
+        "RUNNING" { "[*]" }
+        "SUCCESS" { "[+]" }
+        "ERROR" { "[-]" }
+        default { "[*]" }
     }
     
     Write-Host "[$StepNumber/4] $StatusSymbol $Message" -ForegroundColor $StatusColor
@@ -62,8 +61,10 @@ function Install-Rust {
             # Clean up installer
             Remove-Item $rustupPath -Force
             
-            # Refresh PATH for current session
-            $env:PATH = [System.Environment]::GetEnvironmentVariable("PATH", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("PATH", "User")
+            # Refresh PATH for current session - FIXED
+            $machinePath = [Environment]::GetEnvironmentVariable('Path', 'Machine')
+            $userPath = [Environment]::GetEnvironmentVariable('Path', 'User')
+            $env:Path = "$machinePath;$userPath"
             
             Write-Step 1 "Rust and Cargo installed successfully!" "SUCCESS"
             Write-Host "   Note: You may need to restart your terminal after installation completes." -ForegroundColor Yellow
@@ -106,7 +107,7 @@ function Install-BQuick {
     }
 }
 
-function Verify-Installation {
+function Test-Installation {
     Write-Step 3 "Verifying installation..." "RUNNING"
     
     try {
@@ -130,11 +131,11 @@ function Verify-Installation {
 function Show-Completion {
     Write-Step 4 "Installation completed!" "SUCCESS"
     Write-Host ""
-    Write-Host "╔══════════════════════════════════════════════╗" -ForegroundColor Green
-    Write-Host "║            Installation Complete!            ║" -ForegroundColor Green
-    Write-Host "╚══════════════════════════════════════════════╝" -ForegroundColor Green
+    Write-Host "================================================" -ForegroundColor Green
+    Write-Host "            Installation Complete!             " -ForegroundColor Green
+    Write-Host "================================================" -ForegroundColor Green
     Write-Host ""
-    Write-Host "🚀 To run BQuick, simply type:" -ForegroundColor Cyan
+    Write-Host "To run BQuick, simply type:" -ForegroundColor Cyan
     Write-Host ""
     Write-Host "   bquick" -ForegroundColor Yellow -BackgroundColor Black
     Write-Host ""
@@ -153,14 +154,14 @@ try {
     Install-BQuick  
     Start-Sleep -Seconds 1
     
-    Verify-Installation
+    Test-Installation
     Start-Sleep -Seconds 1
     
     Show-Completion
     
 } catch {
     Write-Host ""
-    Write-Host "❌ Installation failed: $_" -ForegroundColor Red
+    Write-Host "[-] Installation failed: $_" -ForegroundColor Red
     Write-Host ""
     Write-Host "Please try the following:" -ForegroundColor Yellow
     Write-Host "1. Run PowerShell as Administrator" -ForegroundColor Gray
